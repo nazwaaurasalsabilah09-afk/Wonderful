@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -22,20 +23,45 @@ body {font-family:"Poppins",sans-serif;background:var(--light);color:var(--dark)
 
 nav{
     width:100%;
-    padding:18px 8%;
     background:white;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
     position:fixed;
     top:0;
+    left:0;
     z-index:1000;
     box-shadow:0 4px 14px rgba(0,0,0,0.08);
 }
-nav .logo{font-size:22px;font-weight:700;}
-nav ul{display:flex;gap:22px;list-style:none;}
-nav a{text-decoration:none;color:var(--dark);font-weight:500;}
-nav a:hover{color:var(--primary);}
+
+/* Container agar tidak terlalu lebar */
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    padding:18px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+nav .logo{
+    font-size:22px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    gap:22px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--dark);
+    font-weight:500;
+}
+
+nav a:hover{
+    color:var(--primary);
+}
+
 
 .hero{
     height:95vh;
@@ -183,15 +209,18 @@ footer{
 <body>
 
 <nav>
-    <div class="logo">Wonderful Indonesia</div>
-    <ul>
-        <li><a href="#hero">Beranda</a></li>
-        <li><a href="#event">Event</a></li>
-        <li><a href="#destinasi">Destinasi</a></li>
-        <li><a href="#panduan">Panduan</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-    </ul>
+    <div class="nav-container">
+        <div class="logo">Wonderful Indonesia</div>
+        <ul>
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#event">Event</a></li>
+            <li><a href="#destinasi">Destinasi</a></li>
+            <li><a href="#panduan">Panduan</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </div>
 </nav>
+
 
 <div class="hero" id="hero">
     <div>
